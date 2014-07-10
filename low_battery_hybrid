@@ -23,7 +23,7 @@ then
   exit
 fi
 
-if [ "$BAT_STATUS" = "Charging" ] && [ $BAT_LEVEL -le $MIN ]
+if [ "$BAT_STATUS" = "Disharging" ] && [ $BAT_LEVEL -le $MIN ]
 then
   $LOCK_CMD
   sleep 0.200
