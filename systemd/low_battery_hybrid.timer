@@ -1,10 +1,8 @@
 [Unit]
-Description=Runs low_battery_timer every minute
+Description=Runs low_battery_hybrid every minute
 
 [Timer]
-OnBootSec=1min
+OnBootSec=0min
 OnUnitActiveSec=1min
-Unit=low_battery_timer.service
-
-[Install]
-WantedBy=multi-user.target
+AccuracySec=1us
+Persistent=true
